@@ -5,8 +5,8 @@ import Card from './card';
 const initialState = {
     cardNumber: '#### #### #### ####',
     cardHolder: 'FULL NAME',
-    cardMonth: '',
-    cardYear: '',
+    cardMonth: 'MM',
+    cardYear: 'YY',
     cardCvv: '',
     isCardFlipped: false
 };
@@ -54,7 +54,7 @@ const MainScreen = () => {
     }, []);
 
     return (
-        <div className="wrapper">
+        <>
             <CForm
                 cardMonth={state.cardMonth}
                 cardYear={state.cardYear}
@@ -79,7 +79,7 @@ const MainScreen = () => {
                     cardDateRef={cardElementsRef.cardDate}
                 ></Card>
             </CForm>
-        </div>
+        </>
     );
 };
 

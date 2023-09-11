@@ -100,12 +100,12 @@ const Card = ({
         height: '270px',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        padding: '15px',
+        padding: '20px',
         position: 'relative',
         zIndex: '4',
         boxShadow: '0 5px 16px 0 rgba(14, 42, 84, 0.55)',
         userSelect: 'none',
-        borderRadius: '5px',
+        borderRadius: '15px',
         marginBottom: '50px',
       }}
     >
