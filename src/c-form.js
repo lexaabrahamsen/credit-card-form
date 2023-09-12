@@ -88,30 +88,27 @@ export default function CForm({
   // };
 
   return (
-    <div style={{ backgroundColor: 'purple' }}>
     <Grid
       container
       direction="column"
       justifyContent="center"
       alignItems="center"
-      style={{ backgroundColor: 'lightgrey', marginTop: '50px', marginBottom: '0px', padding: '50px' }}
+      style={{ background: 'linear-gradient(#e66465, #9198e5)', marginTop: '50px', marginBottom: '0px', padding: '50px' }}
     >
       <Grid item xs={12}>
         {children}
       </Grid>
-      <Grid item xs={12} sm={12}>
+      <Grid item xs={12}>
         <Card
           sx={{
-            // minWidth: '600px',
-            // maxWidth: '800px',
-            // width: '100%',
+            minWidth: '500px',
+            maxWidth: '800px',
             padding: '25px',
-            mt: '-48%',
-            pt: '90px',
+            mt: '-38%',
+            pt: '220px',
             boxShadow: '0 20px 27px 0 rgba(0,0,0,0.05)',
             borderRadius: '15px',
           }}
-          // style={{ backgroundColor: 'lightgreen' }}
         >
           <Grid item xs={12}>
             <TextField
@@ -212,6 +209,5 @@ export default function CForm({
         </Card>
       </Grid>
     </Grid>
-    </div>
   );
 }

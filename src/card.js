@@ -93,7 +93,7 @@ const Card = ({
       item
       sx={{
         backgroundImage: `url(/card-background/${CHANGE_BACKGROUND_IMG})`,
-        width: '100%',
+        minWidth: '400px',
         maxWidth: '450px',
         marginLeft: 'auto',
         marginRight: 'auto',
