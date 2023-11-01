@@ -93,7 +93,10 @@ export default function CForm({
       direction="column"
       justifyContent="center"
       alignItems="center"
-      style={{ background: 'linear-gradient(#e66465, #9198e5)', marginTop: '50px', marginBottom: '0px', padding: '50px' }}
+      style={{ padding: '150px', backgroundColor: 'chocolate' }}
+      // 'darkolivegreen'
+      // 'peru'
+      // 'sienna'
     >
       <Grid item xs={12}>
         {children}
