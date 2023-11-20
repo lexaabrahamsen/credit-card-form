@@ -1,12 +1,12 @@
-import React, { useState, useEffect, useCallback, useMemo } from 'react';
-import {
-  CSSTransition,
-  TransitionGroup,
-  SwitchTransition,
-} from 'react-transition-group';
-import Button from '@mui/material/Button';
+import React, { useState, useEffect, useMemo } from 'react';
+// import {
+//   CSSTransition,
+//   TransitionGroup,
+//   SwitchTransition,
+// } from 'react-transition-group';
+// import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
-import { Typography } from '@mui/material';
+// import { Typography } from '@mui/material';
 // import './styles.scss';
 
 const CARDS = {
@@ -39,7 +39,7 @@ const Card = ({
   cardHolderRef,
   cardDateRef,
 }) => {
-  const [style, setStyle] = useState(null);
+  const [style, setStyle] = useState(null); // eslint-disable-line no-unused-vars
 
   const cardType = (cardNumber) => {
     const number = cardNumber;
@@ -75,18 +75,18 @@ const Card = ({
     }
   }, [currentFocusedElm]);
 
-  const maskCardNumber = (cardNumber) => {
-    let cardNumberArr = cardNumber.split('');
-    cardNumberArr.forEach((val, index) => {
-      if (index > 4 && index < 14) {
-        if (cardNumberArr[index] !== ' ') {
-          cardNumberArr[index] = '*';
-        }
-      }
-    });
+  // const maskCardNumber = (cardNumber) => {
+  //   let cardNumberArr = cardNumber.split('');
+  //   cardNumberArr.forEach((val, index) => {
+  //     if (index > 4 && index < 14) {
+  //       if (cardNumberArr[index] !== ' ') {
+  //         cardNumberArr[index] = '*';
+  //       }
+  //     }
+  //   });
 
-    return cardNumberArr;
-  };
+  //   return cardNumberArr;
+  // };
 
   return (
     <Grid
