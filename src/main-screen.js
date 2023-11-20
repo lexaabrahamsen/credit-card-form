@@ -32,7 +32,7 @@ const MainScreen = () => {
         cardDate: useRef(),
         cardCvv: useRef()
     };
-
+    // eslint-disable-next-line
     let focusFormFieldByKey = useCallback((key) => {
         formFieldsRefObj[key].current.focus();
     });
