@@ -91,10 +91,11 @@ export default function CForm({
       direction="column"
       justifyContent="center"
       alignItems="center"
-      style={{ padding: '150px', backgroundColor: 'chocolate' }}
+      style={{ padding: '150px', backgroundColor: '#000033' }}
       // 'darkolivegreen'
       // 'peru'
       // 'sienna'
+      // 'chocolate'
     >
       <Grid item xs={12}>
         {children}
